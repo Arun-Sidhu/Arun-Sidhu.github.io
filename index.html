@@ -505,8 +505,9 @@
 		document.addEventListener('DOMContentLoaded', function() {
             const LOCAL_BACKEND = "http://127.0.0.1:8000"; // Backend configuration
             // Actual URL where FastAPI is deployed
-            const PROD_BACKEND  = "https://your-backend-host.example.com";
-            const GITHUB_HOST   = "your-username.github.io"; // GitHub Pages host
+            // const PROD_BACKEND  = "https://your-backend-host.example.com";
+            const PROD_BACKEND  = "http://127.0.0.1:8000"; // for now (Since hosting on laptop)
+            const GITHUB_HOST   = "arun-sidhu.github.io"; // GitHub Pages host
 	
 			const params = new URLSearchParams(window.location.search);
 			const backendParam = params.get("backend"); // "local", "prod", "demo", or null
